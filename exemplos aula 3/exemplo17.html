@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios</title>
+</head>
+<body>
+    <form >
+        <h1>Formulário do aluno</h1>
+        <fieldset style="background-color: azure;">  <!-- um tipo de agrupamento - GROUP (um retangulo que agrupa)-->
+            <legend>Dados Pessoais</legend> <!-- ROTULO/titulo DO GOUP -->
+            <label for="">Nome:</label>
+            <input type="text" size="30">
+            <label for="">Senha provisóoria:</label>
+            <input type="password" size="5"> 
+            <br>
+            <label for="">Sexo:</label>
+            <input type="radio" name="sexo">Femenino
+            <input type="radio" name="sexo">Masculino
+            <input type="radio" name="sexo">Prefiro não identificar
+            <br>
+            <input type="checkbox">Aluno veterano
+            <br>
+            <p>
+                <label for="">Escolha seu curso:</label>
+                <select name="curso" id="">
+                    <optgroup label="exatas">
+                        <option value="">ADS</option>
+                        <option value="">Mecatrônica</option>
+
+                    </optgroup>
+                    <optgroup label="humanas">
+                        <option value="">Gestão empresarial</option>
+                        <option value="">Gestão de marketing digital</option>
+                    </optgroup>
+                </select>
+            </p>
+
+        </fieldset>
+        
+        <br>
+<!-- outro fieldset-->
+        <fieldset>
+            <legend>Dados adicionais</legend>
+            <label for="">RA:</label>
+            <input type="text">
+            <label for="">Data inicio do curso:</label>
+            <!-- tipos de input com datas: -->
+            <input type="date">
+            <input type="datetime-local" style="background-color: thistle;">
+            <input type="week" style="background-color: wheat;">
+            <br>
+            <label for="">Escolha sua cor preferida:</label>
+            <input type="color">    <!-- aparece opcoes de cores para escolher-->
+            <label for="">Escolha o mês de suas férias:</label>
+            <input type="month">
+            <br>
+            <label for="">Informe o quanto você está feliz:</label>
+            <input type="range">
+
+        </fieldset>
+
+        <br>
+
+        <fieldset> 
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Salvar e enviar">
+
+        </fieldset>
+     
+    </form>
+    
+</body>
+</html>
