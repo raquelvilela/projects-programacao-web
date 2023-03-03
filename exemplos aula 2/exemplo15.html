@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo Formulario</title>
+</head>
+<body>
+    <!--    FORM    
+        method - 'get'  (corre risco de captarem infos no caminho-URL, como senha apos enviar - envia pelo endereco)
+               - 'post' (manda/encia pela memoria - nao aparece as infos na url/caminho apos enviar)
+        
+        action - 
+    -->
+    <form action="" method="post">
+        <h1>Formulário de exemplo</h1>
+        <label for="">Nome:</label>
+        <input type="text" size="30" maxlength="30" 
+        placeholder="Digite seu nome aqui" name="nome" id="nome"
+        >   
+        <!--    GERAL DO INPUT
+          #  type -> tipo - como texto, email, data, telefone...
+          #  size -> tamanho da caixa de texto ( 30 caractere)
+          #  maxlenght -> numero maximo de caractere aceito
+          #  placeholder -> o que aparece de disply (ifo para usuario sobre o que digitar)
+          #  name -> nome para referir esse input mais generalizado (tipo uma variavel)  
+          #  id -> nome mais tecnico para o input, uma identificacao adcional
+          #  value -> ja vem algo digitado, valor previamente informado (cobre o placeholder)
+        -->
+
+        <label for="">Senha provisória</label>
+        <input type="password" size="5" maxlength="5" name="senha">
+
+        <br>
+
+        <label for="">Sexo</label>
+        <input type="radio" name="sexo">Femenino
+        <input type="radio" name="sexo">Masculino
+        <input type="radio" name="sexo" checked>Prefiro não declarar
+        <!-- Para marcar apenas 1 - colocar 'name' igual para todos-->
+        <!--    TYPE - RADIO
+          #  radio -> permite marcar mais de uma, ou com o mesmo name apenas 1
+          #  checked -> ja deixa marcado por automatico, mas pode mudar se quiser
+        -->
+
+        <br>
+
+        <label for="">Escolha o seu curso: </label>
+        <select name="curso">
+            <option value="">ADS</option>
+            <option value="">Gestão empresarial</option>
+            <option value="">Mecânica de presição</option>
+            <option value="">Mecatrônica</option>
+            <option value="">Fabricação mecânica</option>
+        </select>
+        <!--    SELECT
+            Para selecionar opção
+        -->
+
+        <br>
+
+        <input type="checkbox" checked disabled>Sim, desejo receber nossos spams?
+        <!--    type - CHECKBOX
+            # checkbox -> caixa quadrada de selecionar. Pode marcar e desmarcar
+            #  checked -> vem automaticamente marcado
+            #  disable -> não é possivel desmarcar
+        -->
+
+
+        <hr>
+        <input type="reset" value="Limpar">    <!-- reseta/limpa o formulario-->
+        <input type="submit" value="Gravar"   <!-- envia o formulario -->
+    <!--
+        pode mudar texto do reset e submit atrraves do 'value'
+    -->
+    </form>
+
+</body>
+</html>
